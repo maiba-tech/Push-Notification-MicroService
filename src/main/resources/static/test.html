@@ -11,4 +11,13 @@
             console.log(JSON.parse(result.body));
         });
 });
+
+    function sendMessage() {
+        var text = document.getElementById('text').value
+        stompClient.send('/app/application', {}, JSON.stringify(text))
+    }
+
 </script>
+
+<button id="send-Message" onclick="sendMessage();">Send</button>
+<input type="text" id="text" placeholder="Text" />

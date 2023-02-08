@@ -10,7 +10,7 @@ public class NotificationServiceImpl implements NotificationService {
     this.simpMessagingTemplate = simpMessagingTemplate;
   }
 
-  public void notify(Object params) {
+  /*public void notify(Object params) {
     simpMessagingTemplate.convertAndSend("/all/group-notification", params);
-  }
+  }*/
 }
