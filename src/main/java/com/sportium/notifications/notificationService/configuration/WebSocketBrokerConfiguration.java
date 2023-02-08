@@ -13,7 +13,7 @@ public class WebSocketBrokerConfiguration implements WebSocketMessageBrokerConfi
   public void configureMessageBroker(MessageBrokerRegistry config) {
     // user destination prefix is /all
     config.enableSimpleBroker("/all");
-    // config.setApplicationDestinationPrefixes("/app");
+    config.setApplicationDestinationPrefixes("/app");
 
   }
 
