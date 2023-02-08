@@ -17,16 +17,20 @@ import java.util.UUID;
 public class NotificationBO {
   @GeneratedValue(generator = "UUID")
   @Id
-  @NotNull
+  //@NotNull
   private UUID id;
 
-  @NotNull private String title;
+  //@NotNull
+  private String title;
 
-  @NotNull private String description;
+  //@NotNull
+  private String description;
 
-  @NotNull private boolean seen;
+  //@NotNull
+  private boolean seen;
 
-  @NotNull private LocalDateTime createdOn;
+  //@NotNull
+   private LocalDateTime createdOn;
 
   @ManyToOne
   @JoinColumn(name = "notification_type_id", nullable = false)

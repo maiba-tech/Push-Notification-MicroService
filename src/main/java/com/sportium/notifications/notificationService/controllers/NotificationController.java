@@ -14,7 +14,7 @@ public class NotificationController {
 
     @MessageMapping("/application")
     @SendTo("/all/group-notification")
-    public Object notify(String title, String text) {
-        return new NotificationBO(title, text);
+    public Object notify(NotificationBO notificationBO) {
+        return notificationBO;
     }
 }
